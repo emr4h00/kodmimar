@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kodmimar | Web Sitesi & Mobil Uygulama</title>
 <meta name="description" content="İşletmenize özel web sitesi ve mobil uygulama. Önce dinlerim, sonra işinize özel tasarlayıp kurarım. Ücretsiz teklif için yazın.">
-<meta name="theme-color" content="#FAF9F6">
+<meta name="theme-color" content="#FFFFFF">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kodmimar | Web Sitesi & Mobil Uygulama">
 <meta property="og:description" content="İşletmenize özel web sitesi ve mobil uygulama. Ücretsiz teklif alın.">
@@ -17,29 +17,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #FAF9F6; --yuzey: #FFFFFF; --murekkep: #0E1A2B; --gri: #5C6677; --soluk: #7D8695;
-    --cizgi: #E8E4DC; --altin: #E2B04F; --altin-koyu: #8E6210; --lac: #0E1A2B; --yesil: #1A9A4E;
+    --bg: #FFFFFF; --alt: #F7F6F2; --yuzey: #FFFFFF; --murekkep: #101828; --gri: #475467; --soluk: #667085;
+    --cizgi: #E7E4DD; --altin: #E2B04F; --altin-koyu: #8E6210; --lac: #0E1A2B; --yesil: #15803D;
     --golge: 0 1px 2px rgba(14,26,43,.04), 0 8px 24px rgba(14,26,43,.06);
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-  body { margin: 0; font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: var(--murekkep); line-height: 1.6; font-size: 17px; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: var(--murekkep); line-height: 1.6; font-size: 18px; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
   .kap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-  h1, h2, h3 { margin: 0; line-height: 1.12; letter-spacing: -0.025em; font-weight: 700; }
+  h1, h2, h3 { margin: 0; line-height: 1.1; letter-spacing: -0.03em; font-weight: 600; }
+  @media (max-width: 560px) { body { font-size: 17px; } }
+  .alt-zemin { background: var(--alt); }
   :focus-visible { outline: 3px solid var(--altin); outline-offset: 3px; border-radius: 6px; }
 
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 12px; font: 600 16px/1 Inter, system-ui, sans-serif; border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, transform .15s; white-space: nowrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 10px; font: 600 16px/1 Inter, system-ui, sans-serif; border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, transform .15s; white-space: nowrap; }
   .btn:active { transform: scale(.98); }
   .btn.koyu { background: var(--murekkep); color: #fff; }
-  .btn.koyu:hover { background: #22324a; }
+  .btn.koyu:hover { background: #26334a; }
   .btn.acik { background: var(--yuzey); border-color: var(--cizgi); color: var(--murekkep); }
   .btn.acik:hover { border-color: #cfc8bb; }
   .btn svg { width: 20px; height: 20px; flex: none; }
 
   /* menü */
-  header { position: sticky; top: 0; z-index: 50; background: rgba(250,249,246,.88); backdrop-filter: saturate(1.4) blur(12px); -webkit-backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
+  header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.88); backdrop-filter: saturate(1.4) blur(12px); -webkit-backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
   header.kayik { border-color: var(--cizgi); }
   .nav { display: flex; align-items: center; gap: 32px; height: 68px; }
   .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -0.02em; }
@@ -53,18 +55,18 @@
   .giris { padding: 96px 0 72px; text-align: center; }
   .rozet { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 99px; background: var(--yuzey); border: 1px solid var(--cizgi); font-size: 14px; font-weight: 500; color: var(--gri); }
   .rozet i { width: 8px; height: 8px; border-radius: 50%; background: var(--yesil); box-shadow: 0 0 0 4px rgba(26,154,78,.15); }
-  .giris h1 { font-size: clamp(36px, 6.4vw, 66px); max-width: 1000px; margin: 26px auto 22px; }
+  .giris h1 { font-size: clamp(40px, 6.2vw, 64px); line-height: 1.08; letter-spacing: -0.035em; max-width: 1000px; margin: 26px auto 22px; }
   .giris h1 span { background: linear-gradient(transparent 62%, rgba(226,176,79,.45) 62%); padding: 0 .06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  .giris p { font-size: clamp(17px, 2vw, 20px); color: var(--gri); max-width: 600px; margin: 0 auto 36px; }
+  .giris p { font-size: clamp(18px, 2vw, 20px); color: var(--gri); max-width: 600px; margin: 0 auto 36px; }
   .giris .butonlar { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .kimler { margin-top: 64px; padding-top: 28px; border-top: 1px solid var(--cizgi); display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; font-size: 15px; color: var(--soluk); }
   .kimler b { color: var(--gri); font-weight: 600; }
   @media (max-width: 560px) { .giris { padding: 52px 0 44px; } .giris .butonlar .btn { width: 100%; } .kimler { margin-top: 44px; gap: 8px 18px; } .kimler b { width: 100%; } .giris h1 br { display: none; } }
 
   section { padding: 88px 0; }
-  .baslik { max-width: 620px; margin-bottom: 44px; }
+  .baslik { max-width: 760px; margin-bottom: 44px; }
   .ust { font-size: 14px; font-weight: 600; color: var(--altin-koyu); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 12px; }
-  .baslik h2 { font-size: clamp(30px, 4vw, 42px); }
+  .baslik h2 { font-size: clamp(30px, 4.2vw, 46px); }
   .baslik p { color: var(--gri); margin: 14px 0 0; }
   @media (max-width: 560px) { section { padding: 60px 0; } .baslik { margin-bottom: 32px; } }
 
@@ -75,7 +77,7 @@
   .ikon { width: 48px; height: 48px; border-radius: 12px; background: #F4EFE4; display: grid; place-items: center; margin-bottom: 20px; }
   .ikon svg { width: 24px; height: 24px; }
   .kart h3 { font-size: 21px; margin-bottom: 8px; }
-  .kart p { margin: 0; color: var(--gri); font-size: 16px; }
+  .kart p { margin: 0; color: var(--gri); font-size: 17px; }
   @media (max-width: 700px) { .kartlar { grid-template-columns: 1fr; } .kart { padding: 24px; } }
 
   /* çalışma */
@@ -95,7 +97,7 @@
   .sayilar b { display: block; font-size: 26px; letter-spacing: -0.02em; }
   .sayilar span { font-size: 14px; color: var(--soluk); }
   .liste { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 10px; }
-  .liste li { display: flex; gap: 12px; font-size: 16px; color: var(--gri); }
+  .liste li { display: flex; gap: 12px; font-size: 17px; color: var(--gri); }
   .liste li::before { content: ''; flex: none; width: 18px; height: 18px; margin-top: 3px; border-radius: 50%; background: #F4EFE4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5.5 9.2l2.3 2.3 4.7-5' fill='none' stroke='%238E6210' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px; }
   @media (max-width: 860px) { .is { grid-template-columns: 1fr; padding: 32px 22px; gap: 32px; } .tel { width: 210px; } .is .btn { width: 100%; } }
   @media (max-width: 400px) { .sayilar { gap: 22px; } .sayilar b { font-size: 22px; } }
@@ -105,7 +107,7 @@
   .adimlar li { counter-increment: a; padding: 26px 24px; border-radius: 18px; border: 1px solid var(--cizgi); background: var(--yuzey); }
   .adimlar li::before { content: counter(a, decimal-leading-zero); display: block; font-size: 14px; font-weight: 600; color: var(--altin-koyu); margin-bottom: 14px; }
   .adimlar h3 { font-size: 19px; margin-bottom: 6px; }
-  .adimlar p { margin: 0; font-size: 15px; color: var(--gri); }
+  .adimlar p { margin: 0; font-size: 16px; color: var(--gri); }
   @media (max-width: 900px) { .adimlar { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 520px) { .adimlar { grid-template-columns: 1fr; } }
 
@@ -118,13 +120,13 @@
   summary::-webkit-details-marker { display: none; }
   summary::after { content: ''; flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--cizgi); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M14 9v10M9 14h10' stroke='%230E1A2B' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E") center/28px; transition: transform .25s; }
   details[open] summary::after { transform: rotate(45deg); }
-  details p { margin: -6px 0 22px; color: var(--gri); font-size: 16px; padding-right: 40px; }
+  details p { margin: -6px 0 22px; color: var(--gri); font-size: 17px; padding-right: 40px; }
   @media (max-width: 860px) { .sss { grid-template-columns: 1fr; gap: 28px; } .sss .baslik { position: static; } details p { padding-right: 0; } }
 
   /* iletişim */
   .iletisim { background: var(--lac); color: #fff; border-radius: 28px; padding: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
   .iletisim .ust { color: var(--altin); }
-  .iletisim h2 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 14px; }
+  .iletisim h2 { font-size: clamp(30px, 4.2vw, 46px); margin-bottom: 14px; }
   .iletisim > div > p { color: #AEB9C8; margin: 0 0 32px; }
   .kanallar { display: grid; gap: 10px; }
   .kanallar a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); transition: background .15s; min-width: 0; }
@@ -142,7 +144,7 @@
   textarea { min-height: 96px; resize: vertical; }
   .ikili { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   form .btn { width: 100%; background: var(--yesil); color: #fff; }
-  form .btn:hover { background: #158241; }
+  form .btn:hover { background: #116932; }
   .not { margin: -4px 0 0; font-size: 13px; color: var(--soluk); text-align: center; }
   .hata { border-color: #D64545 !important; box-shadow: 0 0 0 3px rgba(214,69,69,.12) !important; }
   .hata-yazi { display: none; font-size: 13px; font-weight: 500; color: #C03535; }
@@ -181,12 +183,12 @@
   <p>Önce dinlerim, sonra işine özel tasarlayıp kurarım. Telefonda hızlı açılan, sade ve şık; aracı olmadan, doğrudan benimle.</p>
   <div class="butonlar">
     <a class="btn koyu" href="#iletisim">Ücretsiz teklif al</a>
-    <a class="btn acik" data-wa href="#iletisim"><svg viewBox="0 0 24 24" fill="#1A9A4E" aria-hidden="true"><use href="#wa-ikon"/></svg>WhatsApp'tan yaz</a>
+    <a class="btn acik" data-wa href="#iletisim"><svg viewBox="0 0 24 24" fill="#15803D" aria-hidden="true"><use href="#wa-ikon"/></svg>WhatsApp'tan yaz</a>
   </div>
   <div class="kimler"><b>Kimler için?</b><span>Kafe & restoran</span><span>Klinik</span><span>Kuaför & berber</span><span>Butik & mağaza</span><span>Ofis & danışmanlık</span></div>
 </div></section>
 
-<section id="hizmetler"><div class="kap">
+<section id="hizmetler" class="alt-zemin"><div class="kap">
   <div class="baslik belir"><div class="ust">Hizmetler</div><h2>Neye ihtiyacın varsa, onu kurarım</h2><p>Kullanmayacağın özelliğe para ödemezsin.</p></div>
   <div class="kartlar">
     <article class="kart belir"><div class="ikon"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Kurumsal web sitesi</h3><p>İşletmeni doğru anlatan, hızlı açılan ve Google'da bulunan bir site. WhatsApp, arama ve harita butonlarıyla.</p></article>
@@ -225,7 +227,7 @@
   </div>
 </div></section>
 
-<section id="surec"><div class="kap">
+<section id="surec" class="alt-zemin"><div class="kap">
   <div class="baslik belir"><div class="ust">Süreç</div><h2>Dört adımda, sürprizsiz</h2><p>Her adımda ne yapıldığını görürsün; onayın olmadan bir sonrakine geçilmez.</p></div>
   <ol class="adimlar">
     <li class="belir"><h3>Tanışma</h3><p>İşini, müşterini ve hedefini konuşuruz. Net bir teklif çıkarırım.</p></li>
